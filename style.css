@@ -1,0 +1,325 @@
+/* Imported Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Text*/
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+
+a {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  align-content: center;
+  align-items: center;
+}
+
+.quote {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+}
+
+.about-me{
+  margin-top: 5em;
+}
+
+/*body*/
+
+body {
+  margin: 0;
+}
+
+/*NAV*/
+
+nav {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /*Flex box*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1em;  
+}
+
+.row{
+  display: flex; 
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Buttons*/
+
+.buttons {
+  background: #ffffff;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+ padding-top: .2em; 
+   padding-bottom: .2em; 
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+}
+
+.buttons:hover{
+  border: 3px solid #1684A7;
+  color: #1684A7;
+   transition-duration: 500ms;
+  transition-timing-function: ease-in; 
+}
+
+/*TOP*/
+
+.top {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+/*SOCIAL MEDIA*/
+
+.social-media{
+  margin-top: 2em;
+  margin-right: .05em; 
+   display: flex; 
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+
+.icon{
+  margin-right: 1.5em;
+} 
+
+/*GRID*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*EWU STICKERS*/
+.stickers {
+  height: 210 px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: #f6f6f6;
+  margin: 10px;
+}
+
+.stickers:hover {
+ transition: all 500ms ease-in-out 0.02s;
+  transform: scale(1.01);
+}
+
+.ewu {
+  height: 170px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*FANART*/
+
+.fanart1 {
+  grid-row: 1 / 1;
+  grid-column: 1 / 6;
+  display: flex;
+  background-color: #93a716;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.fanart1:hover {
+  transition: all 650ms ease-in-out 0.05s;
+  transform: scale(1.01);
+}
+
+#damian-1, #wayne-2 {
+  max-height: 300px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   align-content: center;
+}
+
+.fanart2 {
+  grid-row: 1 / 2;
+  grid-column: 6 / span 5;
+  display: flex;
+  background-color: #1684a7;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.fanart2:hover {
+  transition: all 650ms ease-in-out 0.05s;
+  transform: scale(1.01);
+}
+
+.logo {
+  grid-row:  / 1;
+  grid-column: 5/ span 6;
+  display: flex;
+  background-color: #f6f6f6;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo:hover {
+  transition: all 650ms ease-in-out 0.05s;
+  transform: scale(1.01);
+}
+
+#kitty {
+  max-height: 276px;
+  justify-content: center;
+  
+}
+
+/*BOOKCOVER*/
+
+.book {
+   grid-row: 2 / 2;
+  grid-column: 1/ span 4;
+  display: flex;
+  background-color: #f6f6f6;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.book:hover {
+  transition: all 650ms ease-in-out 0.05s;
+  transform: scale(1.01);
+}
+
+#among-us {
+  max-height: 163px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*CONCEPT ART*/
+
+.concept1 {
+  display: flex;
+  background-color: #1684a7;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+   grid-row: 3 / 3;
+  grid-column: 1/ span 10;
+}
+
+.concept1:hover {
+  transition: all 650ms ease-in-out 0.05s;
+  transform: scale(1.01);
+}
+
+#mar {
+  height: 177px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*Footer*/
+
+footer{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+   text-transform: uppercase;
+  padding-top: 5em ;
+padding-bottom: 1em;
+}
+
+.copyright{
+   font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/*Media Queries*/
+
+@media(max-width:1000px){
+  .fanart1{
+    grid-row: 1 / 1;
+  grid-column: 1/ span 10;
+  }
+}
+
+@media(max-width:1000px){
+  .fanart2{
+    grid-row: 2 / 2;
+  grid-column: 1/ span 10;
+  }
+}
+
+@media(max-width:1000px){
+  .logo{
+    grid-row: 3 / 3;
+  grid-column: 1/ span 10;
+  }
+}
+
+@media(max-width:1000px){
+  .book{
+    grid-row: 4 / 4;
+  grid-column: 1/ span 10;
+  }
+}
+
+@media(max-width:1000px){
+  .concept1{
+    grid-row: 5 / 5;
+  grid-column: 1/ span 10;
+  }
+}
+
